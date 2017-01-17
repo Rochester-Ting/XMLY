@@ -7,17 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AAEC64206F4994530DC8F639 /* Pods_XMLY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363F65AAD518D5AA670CE88E /* Pods_XMLY.framework */; };
+		CA2B4D861E2DB72B00F87BF0 /* DiscoverVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2B4D841E2DB72B00F87BF0 /* DiscoverVC.storyboard */; };
+		CA2B4D881E2DB75B00F87BF0 /* SubscriptionVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2B4D871E2DB75B00F87BF0 /* SubscriptionVC.storyboard */; };
+		CA2B4D8A1E2DB78200F87BF0 /* DownLoadListenVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2B4D891E2DB78200F87BF0 /* DownLoadListenVC.storyboard */; };
+		CA2B4D8C1E2DB79F00F87BF0 /* MeVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2B4D8B1E2DB79F00F87BF0 /* MeVC.storyboard */; };
+		CA2B4D8E1E2DBC1100F87BF0 /* PlayVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2B4D8D1E2DBC1100F87BF0 /* PlayVC.storyboard */; };
+		CA2B4D901E2DBC1F00F87BF0 /* PlayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2B4D8F1E2DBC1F00F87BF0 /* PlayVC.swift */; };
+		CA2B4D921E2DBF9500F87BF0 /* DiscoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2B4D911E2DBF9500F87BF0 /* DiscoverVC.swift */; };
+		CA2B4D941E2DC7FE00F87BF0 /* RRTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2B4D931E2DC7FE00F87BF0 /* RRTabBar.swift */; };
+		CA2B4D961E2DD79900F87BF0 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2B4D951E2DD79900F87BF0 /* NetworkTools.swift */; };
 		CAA5E8891E2CFAC90001EFBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAA5E8871E2CFAC90001EFBE /* Main.storyboard */; };
 		CAA5E88B1E2CFAC90001EFBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAA5E88A1E2CFAC90001EFBE /* Assets.xcassets */; };
 		CAA5E88E1E2CFAC90001EFBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAA5E88C1E2CFAC90001EFBE /* LaunchScreen.storyboard */; };
 		CAA5E8991E2CFAC90001EFBE /* XMLYTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA5E8981E2CFAC90001EFBE /* XMLYTests.swift */; };
 		CAA5E8A41E2CFAC90001EFBE /* XMLYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA5E8A31E2CFAC90001EFBE /* XMLYUITests.swift */; };
 		CAA5E8B91E2CFD880001EFBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA5E8B81E2CFD880001EFBE /* AppDelegate.swift */; };
-		CAA5E8C91E2D1CAE0001EFBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA5E8C51E2D1CAE0001EFBE /* ViewController.swift */; };
-		CAA5E8DB1E2D1F030001EFBE /* DiscoverVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAA5E8DA1E2D1F030001EFBE /* DiscoverVC.storyboard */; };
-		CAA5E8DD1E2D1F2E0001EFBE /* SubscriptionVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAA5E8DC1E2D1F2E0001EFBE /* SubscriptionVC.storyboard */; };
-		CAA5E8DF1E2D1F530001EFBE /* DownLoadListenVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAA5E8DE1E2D1F530001EFBE /* DownLoadListenVC.storyboard */; };
-		CAA5E8E11E2D1F7B0001EFBE /* MeVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAA5E8E01E2D1F7B0001EFBE /* MeVC.storyboard */; };
 		CAA5E8E31E2D1FC50001EFBE /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA5E8E21E2D1FC50001EFBE /* MainController.swift */; };
 		CAA5E8E51E2D210D0001EFBE /* DownLoadListenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA5E8E41E2D210D0001EFBE /* DownLoadListenVC.swift */; };
 		CAA5E8E71E2D21190001EFBE /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA5E8E61E2D21190001EFBE /* MeVC.swift */; };
@@ -42,6 +47,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		363F65AAD518D5AA670CE88E /* Pods_XMLY.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMLY.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C624079F0193F18F074B652D /* Pods-XMLY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMLY.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMLY/Pods-XMLY.release.xcconfig"; sourceTree = "<group>"; };
+		CA2B4D851E2DB72B00F87BF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = XMLY/Base.lproj/DiscoverVC.storyboard; sourceTree = SOURCE_ROOT; };
+		CA2B4D871E2DB75B00F87BF0 /* SubscriptionVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SubscriptionVC.storyboard; path = "XMLY/Classes/Subscription(订阅听)/Controller/SubscriptionVC.storyboard"; sourceTree = SOURCE_ROOT; };
+		CA2B4D891E2DB78200F87BF0 /* DownLoadListenVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = DownLoadListenVC.storyboard; path = "XMLY/Classes/DownLoadListen(下载听)/Controller/DownLoadListenVC.storyboard"; sourceTree = SOURCE_ROOT; };
+		CA2B4D8B1E2DB79F00F87BF0 /* MeVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MeVC.storyboard; path = "XMLY/Classes/MeVC(我)/Controller/MeVC.storyboard"; sourceTree = SOURCE_ROOT; };
+		CA2B4D8D1E2DBC1100F87BF0 /* PlayVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = PlayVC.storyboard; path = "XMLY/Classes/Play(播放)/Controller/PlayVC.storyboard"; sourceTree = SOURCE_ROOT; };
+		CA2B4D8F1E2DBC1F00F87BF0 /* PlayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayVC.swift; sourceTree = "<group>"; };
+		CA2B4D911E2DBF9500F87BF0 /* DiscoverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverVC.swift; sourceTree = "<group>"; };
+		CA2B4D931E2DC7FE00F87BF0 /* RRTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RRTabBar.swift; sourceTree = "<group>"; };
+		CA2B4D951E2DD79900F87BF0 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		CAA5E8801E2CFAC90001EFBE /* XMLY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMLY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAA5E8881E2CFAC90001EFBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAA5E88A1E2CFAC90001EFBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,15 +70,11 @@
 		CAA5E8A31E2CFAC90001EFBE /* XMLYUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLYUITests.swift; sourceTree = "<group>"; };
 		CAA5E8A51E2CFAC90001EFBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAA5E8B81E2CFD880001EFBE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CAA5E8C51E2D1CAE0001EFBE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../Main(主要)/Controller/ViewController.swift"; sourceTree = "<group>"; };
-		CAA5E8DA1E2D1F030001EFBE /* DiscoverVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = DiscoverVC.storyboard; path = "XMLY/Classes/Discover(发现)/Controller/DiscoverVC.storyboard"; sourceTree = SOURCE_ROOT; };
-		CAA5E8DC1E2D1F2E0001EFBE /* SubscriptionVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SubscriptionVC.storyboard; path = "XMLY/Classes/Subscription(订阅听)/Controller/SubscriptionVC.storyboard"; sourceTree = SOURCE_ROOT; };
-		CAA5E8DE1E2D1F530001EFBE /* DownLoadListenVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = DownLoadListenVC.storyboard; path = "XMLY/Classes/DownLoadListen(下载听)/Controller/DownLoadListenVC.storyboard"; sourceTree = SOURCE_ROOT; };
-		CAA5E8E01E2D1F7B0001EFBE /* MeVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MeVC.storyboard; path = "XMLY/Classes/MeVC(我)/Controller/MeVC.storyboard"; sourceTree = SOURCE_ROOT; };
 		CAA5E8E21E2D1FC50001EFBE /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		CAA5E8E41E2D210D0001EFBE /* DownLoadListenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownLoadListenVC.swift; sourceTree = "<group>"; };
 		CAA5E8E61E2D21190001EFBE /* MeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		CAA5E8E81E2D212F0001EFBE /* SubscriptionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionVC.swift; sourceTree = "<group>"; };
+		D4650378BB890EDC1F6D312C /* Pods-XMLY.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMLY.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XMLY/Pods-XMLY.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAEC64206F4994530DC8F639 /* Pods_XMLY.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +103,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		033A704C58053E3D73740477 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				363F65AAD518D5AA670CE88E /* Pods_XMLY.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7AC8A9D9BEA60834E7D9E35 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4650378BB890EDC1F6D312C /* Pods-XMLY.debug.xcconfig */,
+				C624079F0193F18F074B652D /* Pods-XMLY.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CAA5E8771E2CFAC90001EFBE = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +127,8 @@
 				CAA5E8971E2CFAC90001EFBE /* XMLYTests */,
 				CAA5E8A21E2CFAC90001EFBE /* XMLYUITests */,
 				CAA5E8811E2CFAC90001EFBE /* Products */,
+				C7AC8A9D9BEA60834E7D9E35 /* Pods */,
+				033A704C58053E3D73740477 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -221,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				CAA5E8B81E2CFD880001EFBE /* AppDelegate.swift */,
+				CA2B4D951E2DD79900F87BF0 /* NetworkTools.swift */,
 			);
 			name = "Other(其他)";
 			path = "Classes/Other(其他)";
@@ -229,8 +262,8 @@
 		CAA5E8BC1E2D1C8F0001EFBE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CAA5E8DA1E2D1F030001EFBE /* DiscoverVC.storyboard */,
-				CAA5E8C51E2D1CAE0001EFBE /* ViewController.swift */,
+				CA2B4D841E2DB72B00F87BF0 /* DiscoverVC.storyboard */,
+				CA2B4D911E2DBF9500F87BF0 /* DiscoverVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -259,8 +292,8 @@
 		CAA5E8C01E2D1C960001EFBE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CAA5E8DE1E2D1F530001EFBE /* DownLoadListenVC.storyboard */,
 				CAA5E8E41E2D210D0001EFBE /* DownLoadListenVC.swift */,
+				CA2B4D891E2DB78200F87BF0 /* DownLoadListenVC.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -305,6 +338,7 @@
 		CAA5E8C71E2D1CAE0001EFBE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CA2B4D931E2DC7FE00F87BF0 /* RRTabBar.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -319,8 +353,8 @@
 		CAA5E8CA1E2D1CB90001EFBE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CAA5E8E01E2D1F7B0001EFBE /* MeVC.storyboard */,
 				CAA5E8E61E2D21190001EFBE /* MeVC.swift */,
+				CA2B4D8B1E2DB79F00F87BF0 /* MeVC.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -349,6 +383,8 @@
 		CAA5E8CE1E2D1CC20001EFBE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CA2B4D8D1E2DBC1100F87BF0 /* PlayVC.storyboard */,
+				CA2B4D8F1E2DBC1F00F87BF0 /* PlayVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -377,8 +413,8 @@
 		CAA5E8D21E2D1CC90001EFBE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CAA5E8DC1E2D1F2E0001EFBE /* SubscriptionVC.storyboard */,
 				CAA5E8E81E2D212F0001EFBE /* SubscriptionVC.swift */,
+				CA2B4D871E2DB75B00F87BF0 /* SubscriptionVC.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -411,9 +447,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CAA5E8A81E2CFAC90001EFBE /* Build configuration list for PBXNativeTarget "XMLY" */;
 			buildPhases = (
+				6D49FB52A80E803BDB9237C2 /* [CP] Check Pods Manifest.lock */,
 				CAA5E87C1E2CFAC90001EFBE /* Sources */,
 				CAA5E87D1E2CFAC90001EFBE /* Frameworks */,
 				CAA5E87E1E2CFAC90001EFBE /* Resources */,
+				8A4E358781A7B9D7F2BACF74 /* [CP] Embed Pods Frameworks */,
+				1E038C23485BAC7D8CE7BD8D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -514,13 +553,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAA5E8DB1E2D1F030001EFBE /* DiscoverVC.storyboard in Resources */,
-				CAA5E8DD1E2D1F2E0001EFBE /* SubscriptionVC.storyboard in Resources */,
-				CAA5E8DF1E2D1F530001EFBE /* DownLoadListenVC.storyboard in Resources */,
+				CA2B4D861E2DB72B00F87BF0 /* DiscoverVC.storyboard in Resources */,
+				CA2B4D881E2DB75B00F87BF0 /* SubscriptionVC.storyboard in Resources */,
+				CA2B4D8A1E2DB78200F87BF0 /* DownLoadListenVC.storyboard in Resources */,
 				CAA5E88E1E2CFAC90001EFBE /* LaunchScreen.storyboard in Resources */,
 				CAA5E88B1E2CFAC90001EFBE /* Assets.xcassets in Resources */,
 				CAA5E8891E2CFAC90001EFBE /* Main.storyboard in Resources */,
-				CAA5E8E11E2D1F7B0001EFBE /* MeVC.storyboard in Resources */,
+				CA2B4D8C1E2DB79F00F87BF0 /* MeVC.storyboard in Resources */,
+				CA2B4D8E1E2DBC1100F87BF0 /* PlayVC.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,15 +580,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E038C23485BAC7D8CE7BD8D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMLY/Pods-XMLY-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D49FB52A80E803BDB9237C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8A4E358781A7B9D7F2BACF74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMLY/Pods-XMLY-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CAA5E87C1E2CFAC90001EFBE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CAA5E8E71E2D21190001EFBE /* MeVC.swift in Sources */,
-				CAA5E8C91E2D1CAE0001EFBE /* ViewController.swift in Sources */,
+				CA2B4D941E2DC7FE00F87BF0 /* RRTabBar.swift in Sources */,
+				CA2B4D921E2DBF9500F87BF0 /* DiscoverVC.swift in Sources */,
 				CAA5E8E51E2D210D0001EFBE /* DownLoadListenVC.swift in Sources */,
 				CAA5E8E91E2D212F0001EFBE /* SubscriptionVC.swift in Sources */,
+				CA2B4D961E2DD79900F87BF0 /* NetworkTools.swift in Sources */,
+				CA2B4D901E2DBC1F00F87BF0 /* PlayVC.swift in Sources */,
 				CAA5E8E31E2D1FC50001EFBE /* MainController.swift in Sources */,
 				CAA5E8B91E2CFD880001EFBE /* AppDelegate.swift in Sources */,
 			);
@@ -586,6 +677,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		CA2B4D841E2DB72B00F87BF0 /* DiscoverVC.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA2B4D851E2DB72B00F87BF0 /* Base */,
+			);
+			name = DiscoverVC.storyboard;
+			path = "../../Main(主要)/Controller";
+			sourceTree = "<group>";
+		};
 		CAA5E8871E2CFAC90001EFBE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -701,8 +801,10 @@
 		};
 		CAA5E8A91E2CFAC90001EFBE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4650378BB890EDC1F6D312C /* Pods-XMLY.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = Y6GFNNDJWB;
 				INFOPLIST_FILE = XMLY/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -715,8 +817,10 @@
 		};
 		CAA5E8AA1E2CFAC90001EFBE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C624079F0193F18F074B652D /* Pods-XMLY.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = Y6GFNNDJWB;
 				INFOPLIST_FILE = XMLY/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -804,6 +908,7 @@
 				CAA5E8AA1E2CFAC90001EFBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CAA5E8AB1E2CFAC90001EFBE /* Build configuration list for PBXNativeTarget "XMLYTests" */ = {
 			isa = XCConfigurationList;
@@ -812,6 +917,7 @@
 				CAA5E8AD1E2CFAC90001EFBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CAA5E8AE1E2CFAC90001EFBE /* Build configuration list for PBXNativeTarget "XMLYUITests" */ = {
 			isa = XCConfigurationList;
@@ -820,6 +926,7 @@
 				CAA5E8B01E2CFAC90001EFBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

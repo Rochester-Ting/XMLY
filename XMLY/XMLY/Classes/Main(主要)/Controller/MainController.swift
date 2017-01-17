@@ -12,24 +12,62 @@ class MainController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        // 添加所有的子控制器
+        setUpAllController()
+        // 设置自己的tabbar
+        setUpTabBar()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+}
+// 设置自己的tabbar
+extension MainController{
+    fileprivate func setUpTabBar(){
+        let rrTabBar = RRTabBar()
+        // rrTabBar的闭包回调
+        rrTabBar.btntag = {(btnTag) in
+            if btnTag == 2{
+                let playVC = PlayVC()
+                self.present(playVC, animated: true, completion: nil)
+            }else{
+                self.selectedIndex = btnTag
+            }
+        }
+        self.setValue(rrTabBar, forKeyPath: "tabBar")
+    }
+}
+// 添加所有子控件
+extension MainController{
+    fileprivate func setUpAllController(){
+        // 发现
+        let disImage = UIImage(named: "tabbar_find_n")
+        let disSelectImage = UIImage(named: "tabbar_find_h")
+        creatTabBar(name:nil, image: disImage, selectImage: disSelectImage, Storyboard: "DiscoverVC")
+        // 订阅听
+        let soundImage = UIImage(named: "tabbar_sound_n")
+        let soundSelectImage = UIImage(named: "tabbar_sound_h")
+        creatTabBar(name: nil, image: soundImage, selectImage: soundSelectImage, Storyboard: "SubscriptionVC")
+        // 播放
+        let listenImage = #imageLiteral(resourceName: "tabbar_np_playnon")
+        creatTabBar(name: nil, image: listenImage, selectImage: nil, Storyboard: "PlayVC")
+        // 下载听
+        
+        let selectDownLoadImage = #imageLiteral(resourceName: "tabbar_download_h")
+        let downLoadImage = #imageLiteral(resourceName: "tabbar_download_n")
+        creatTabBar(name: nil, image: downLoadImage, selectImage: selectDownLoadImage, Storyboard: "DownLoadListenVC")
+        // 我
+        let meImage = #imageLiteral(resourceName: "tabbar_me_n")
+        let selectMeImage = #imageLiteral(resourceName: "tabbar_me_h")
+        creatTabBar(name: nil, image: meImage, selectImage: selectMeImage, Storyboard: "MeVC")
+        
+        
+    }
+    fileprivate func creatTabBar(name: String?,image: UIImage?,selectImage: UIImage?,Storyboard: String!){
+        let vc = UIStoryboard(name: Storyboard, bundle: nil).instantiateInitialViewController()
+        guard let vc1 = vc else { return }
+//        vc1.tabBarItem.selectedImage = selectImage
+//        vc1.tabBarItem.image = image
+        addChildViewController(vc1)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
