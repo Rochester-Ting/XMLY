@@ -39,19 +39,23 @@ extension RecommendVM{
             guard let editorRecommendAlbums = responseObjectDict["editorRecommendAlbums"] as? [String : NSObject] else {return}
             self.sectionList.append(sectionItem(dict:editorRecommendAlbums))
             
-            finishedCallBack()
-        }
-    }
-    // 获取分类
-    func requestClassiftData(finished:@escaping ()->()){
-        NetworkTools.requestData(type: .GET, urlString: kHotAndGuessAPI) { (responseObject) in
-            guard let responseDict = responseObject as? [String : NSObject] else{return}
-            guard let discoveryColumns = responseDict["discoveryColumns"] as? [String : NSObject] else {return}
-            guard let classiftList = discoveryColumns["list"] as? [[String : NSObject]] else {return}
-            for dict in classiftList{
-                self.classiftList.append(ClassiftItem(dict: dict))
+//            finishedCallBack()
+            NetworkTools.requestData(type: .GET, urlString: kHotAndGuessAPI) { (responseObject) in
+                guard let responseDict = responseObject as? [String : NSObject] else{return}
+                guard let discoveryColumns = responseDict["discoveryColumns"] as? [String : NSObject] else {return}
+                guard let classiftList = discoveryColumns["list"] as? [[String : NSObject]] else {return}
+                for dict in classiftList{
+                    self.classiftList.append(ClassiftItem(dict: dict))
+                }
+                guard let cityColumn = responseDict["cityColumn"] as? [String : NSObject] else {return}
+                self.sectionList.append(sectionItem(dict: cityColumn))
+                guard let hotRecommends = responseDict["hotRecommends"] as? [String : NSObject] else {return}
+                guard let list = hotRecommends["list"] as? [[String : NSObject]] else {return}
+                for dict in list{
+                    self.sectionList.append(sectionItem(dict: dict))
+                }
+                finishedCallBack()
             }
-            finished()
         }
     }
     // 获取剩余内容

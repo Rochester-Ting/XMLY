@@ -35,7 +35,7 @@ class ClassiftView: UIView {
     override init(frame : CGRect) {
         super.init(frame: frame)
         setUpUI()
-        recommendVM.requestClassiftData {
+        recommendVM.requestCirClePicData { 
             self.collectionView.reloadData()
         }
     }
