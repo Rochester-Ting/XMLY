@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DetailCell" customModule="XMLY" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="85" height="139"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="85" height="139"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nqj-Qd-gk5">
+                        <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Nqj-Qd-gk5" secondAttribute="height" multiplier="1:1" id="ALf-wh-8Sb"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feE-n9-Xls">
+                        <rect key="frame" x="0.0" y="85" width="85" height="32"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="find_specialicon" translatesAutoresizingMaskIntoConstraints="NO" id="PJ9-RT-qmI">
+                        <rect key="frame" x="0.0" y="119" width="10" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="ElV-eW-sxr"/>
+                            <constraint firstAttribute="width" constant="10" id="h68-Da-bjG"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="静说日本" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDj-Jc-kpI">
+                        <rect key="frame" x="20" y="117" width="45" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.71668781725888331" green="0.71668781725888331" blue="0.71668781725888331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="PJ9-RT-qmI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7sP-Gn-NXK"/>
+                <constraint firstAttribute="trailing" secondItem="Nqj-Qd-gk5" secondAttribute="trailing" id="D1N-SF-Z1N"/>
+                <constraint firstItem="Nqj-Qd-gk5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="IWt-PB-9CY"/>
+                <constraint firstItem="Nqj-Qd-gk5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="K1k-nS-fIo"/>
+                <constraint firstItem="feE-n9-Xls" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hd4-Hp-WKn"/>
+                <constraint firstItem="Nqj-Qd-gk5" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="mA9-va-eNd"/>
+                <constraint firstAttribute="bottom" secondItem="PJ9-RT-qmI" secondAttribute="bottom" constant="10" id="ogc-IP-fjv"/>
+                <constraint firstItem="LDj-Jc-kpI" firstAttribute="top" secondItem="feE-n9-Xls" secondAttribute="bottom" id="sOO-uH-bPR"/>
+                <constraint firstItem="LDj-Jc-kpI" firstAttribute="leading" secondItem="PJ9-RT-qmI" secondAttribute="trailing" constant="10" id="ugn-XN-pDR"/>
+                <constraint firstAttribute="trailing" secondItem="feE-n9-Xls" secondAttribute="trailing" id="x7x-CE-NtB"/>
+                <constraint firstItem="feE-n9-Xls" firstAttribute="top" secondItem="Nqj-Qd-gk5" secondAttribute="bottom" id="x8N-Vn-e4H"/>
+                <constraint firstItem="LDj-Jc-kpI" firstAttribute="centerY" secondItem="PJ9-RT-qmI" secondAttribute="centerY" id="xpN-Oi-l7F"/>
+            </constraints>
+            <size key="customSize" width="85" height="139"/>
+            <connections>
+                <outlet property="imagev" destination="Nqj-Qd-gk5" id="vGD-ci-MG9"/>
+                <outlet property="intro" destination="feE-n9-Xls" id="lFi-6Q-Qsb"/>
+                <outlet property="name" destination="LDj-Jc-kpI" id="fUw-kK-2R7"/>
+            </connections>
+            <point key="canvasLocation" x="62.5" y="103.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="find_specialicon" width="10" height="10"/>
+    </resources>
+</document>

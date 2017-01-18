@@ -19,6 +19,6 @@ class PlayVC: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.backBtn(Any)
+        self.backBtn(Any.self)
     }
 }
